@@ -1,10 +1,77 @@
-*{
-    margin:0;
-    padding:0;
+/* This CSS file contains styling rules for an HTML file. */
+
+/* Resetting default styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-img{
-    height:500px;
-    width:500px;
+
+/* Styling for images */
+img {
+    height: 500px;
+    width: 500px;
+}
+
+/* Styling for the body element */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+/* Styling for the container element */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the card element */
+.card {
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for the card element */
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for the image inside the card element */
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Styling for the intro section inside the card element */
+.card .intro {
+    padding: 20px;
+}
+
+/* Styling for the heading inside the card element */
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the paragraph inside the card element */
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Styling for the bold text inside the paragraph */
+.card p span {
+    font-weight: bold;
 }
